@@ -1,21 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameManager Instance;
+
+    private void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        DontDestroyOnLoad(transform);
+        }
+        else 
+            Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-                { 
-                    SceneManager.LoadScene("MainMenu");
-                }
+        LoadScene("MainMenu");
     }
+    
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+}
 
