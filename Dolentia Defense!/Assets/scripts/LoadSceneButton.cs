@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class LoadSceneButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string SceneName;
 
-    // Update is called once per frame
-    void Update()
+    public void LoadScene()
     {
-        
+        GameManager.Instance.LoadScene(SceneName);
     }
 }
