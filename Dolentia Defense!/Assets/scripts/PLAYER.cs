@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class PLAYER : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float velocidade;
+    public Rigidbody2D RIG;
     void Start()
     {
         
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        float hori = Input.GetAxis("Horizontal");
+        float vert = Input.GetAxis("Vertical");
+        //variaveis criadas para controlar as direcoes da nave
+
+        float velocidadeHORI = (hori * this.velocidade);
+        float velocidadeVERT = (vert * this.velocidade);
+        //mult as velocidades
+
+        this.RIG.velocity = new Vector2(velocidadeHORI, velocidadeVERT);
+        //vector2 eh uma variavel que guarda dois valores
     }
+
+    
+
 }
