@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class inimigo1 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    float velocidade;
+  
     void Start()
     {
-        
+        velocidade = 2f;
     }
 
     // Update is called once per frame
