@@ -15,5 +15,5 @@ public class inimigo1 : MonoBehaviour
     {
        
         }
-    }
 }
+
