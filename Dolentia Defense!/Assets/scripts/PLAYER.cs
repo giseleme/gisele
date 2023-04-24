@@ -5,12 +5,12 @@ using UnityEngine;
 public class PLAYER : MonoBehaviour
 {
     public float velocidade;
-    public Rigidbody2D RIG;
+    public new Rigidbody2D RIG;
+
     void Start()
     {
         
     }
-    
     void Update()
     {
         float hori = Input.GetAxis("Horizontal");
