@@ -240,7 +240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491868649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.32, y: 0.67, z: 0}
+  m_LocalPosition: {x: 11.33, y: 0.77, z: 0}
   m_LocalScale: {x: 3.1782262, y: 3.1782262, z: 3.1782262}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  speed: 6
+  speed: 10
 --- !u!50 &491868654
 Rigidbody2D:
   serializedVersion: 4
@@ -347,8 +347,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0011396848, y: 0.0045992457}
-  m_Size: {x: 0.7915146, y: 0.3802518}
+  m_Offset: {x: 0.0023112507, y: 0.001084247}
+  m_Size: {x: 0.76573825, y: 0.33572876}
   m_Direction: 1
 --- !u!1 &597451019
 GameObject:
@@ -1043,7 +1043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062866080}
   m_LocalRotation: {x: -0, y: -0, z: -0.0042341654, w: 0.99999106}
-  m_LocalPosition: {x: -10.48, y: -0.04, z: 0}
+  m_LocalPosition: {x: -10.75, y: 0.01, z: 0}
   m_LocalScale: {x: 1.8572713, y: 1.8572713, z: 1.8572714}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1153,7 +1153,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4442488165904812065, guid: 503e39036975f6045a13817c64d3b04f, type: 3}
   bulletSpawn: {fileID: 2073663117}
   shootButton: 32
-  fireRate: 0.5
+  fireRate: 0.2
 --- !u!70 &2062866087
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1167,8 +1167,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020064801, y: 0.019730141}
-  m_Size: {x: 1.2398709, y: 0.77462035}
+  m_Offset: {x: 0.009492603, y: -0.00024355082}
+  m_Size: {x: 1.160011, y: 0.6841302}
   m_Direction: 1
 --- !u!1 &2073663116
 GameObject:
