@@ -8,7 +8,7 @@ public class camera : MonoBehaviour
     public float smoothSpeed = 0.125f; // velocidade de suavização do movimento da câmera
     public Vector3 offset; // posição da câmera em relação ao objeto
 
-    void FixedUpdate()
+    void Update()
     {
         Vector3 desiredPosition = target.position + offset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
